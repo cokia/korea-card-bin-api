@@ -1,0 +1,19 @@
+{
+  "name": "korea-card-bin-api",
+  "version": "1.0.0",
+  "main": "app.ts",
+  "repository": "https://github.com/cokia/korea-card-bin-api.git",
+  "author": "cokia <hwymaster01@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "fs": "^0.0.1-security",
+    "typescript": "^4.2.4"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.10",
+    "@types/express": "^4.17.11",
+    "ts-node": "^9.1.1"
+  }
+}

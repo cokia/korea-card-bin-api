@@ -71,7 +71,7 @@ for a in i:
 
 data["BIN"] = data["BIN"].astype(int)
 
-jsonResult = json.loads(data.to_json(orient='records'))
+jsonResult = json.loads(data.to_json(orient='records')).replace('\'', '\"')
 
 file = open("bindata.json", "w")
 file.write(str(jsonResult))

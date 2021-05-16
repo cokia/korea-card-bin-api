@@ -69,4 +69,10 @@ i = data[data['CARDTYPE'].str.contains('신세계')].index
 for a in i:
   data.at[a,'CARDTYPE'] = '신용'
 
+data["BIN"] = data["BIN"].astype(int)
+
 jsonResult = json.loads(data.to_json(orient='records'))
+
+file = open("bindata.json", "w")
+file.write(str(jsonResult))
+file.close()
